@@ -40,7 +40,7 @@ jobs:
       - name: Generate coverage report
         run: make coverage
       - name: Upload coverage artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: coverage-report
           path: |
@@ -59,7 +59,7 @@ jobs:
       - name: Build application
         run: make build
       - name: Upload binary
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: hello-binary
           path: bin/hello
